@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>offcanvas</title>
+	<style>
+	  .light_blue {
+			background-color: lightblue;
+		} 
+
+		.dark_blue {
+			background-color: navy;
+		} 
+
+
+		html,body,main {
+			height: 100%;
+			width: 100%;
+		}
+
+		nav {
+			width: 300px;
+			height: 100%;
+			position: absolute;
+			transform: translate( -300px,0);
+			transition: transform 0.3s ease;
+		}
+		nav.open {
+			transform: translate(0,0);
+		}
+
+		@media screen and (min-width:600px) {
+		nav {
+			position:relative;
+			transform:translate(0,0);
+		}
+
+		body {
+			display: flex;
+			flex-flow: row nowrap;
+		}
+
+		main {
+			width: auto;
+			flex-grow: 1;
+		}.btn{
+			background-color: wheat;
+		}
+		.btn:hover {
+			background-color: gold;
+			margin-top: -2px;
+
+		}
+		.mar{
+			background-color: orange;
+		}
+
+	}
+	</style>
+</head>
+<body>
+	<nav id="drawer" class="black">
+		<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">sucess story</a></li>
+		</ul>
+	</nav>
+	<main class="light blue" id="">
+
+</body>
+</html>
+
+	
+		
+	

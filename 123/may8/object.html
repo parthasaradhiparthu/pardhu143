@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object</title>
+	<script>
+
+		var umbrella={
+            color:"pink",
+            isopen:false,
+            open: function(){
+                if(umbrella.isopen==true){
+                    return "The umbrella is already opened!";
+                }
+                else{
+                    umbrella.isopen=true;
+                    return "julia opens the  umbrella !";
+                }
+                },
+                close:function(){
+                    if(umbrella.isopen==false){
+                        return"The umbrella is already closed";
+                    }
+                    else{
+                        umbrella.isopen=false;
+                        return"julia closes the umbrella";
+
+                    }
+                }
+            };
+
+            
+        
+        var user={
+            email:"vinesh@gmail.com",
+            firstname:"first",
+            lastname:"last",
+        };
+        var person={
+            "name":"sai",
+            "age":19,
+            "child1":"james",
+            "child2":"julia"
+        };
+        
+
+
+
+		var breakfast={
+			name:"The lumberjack",
+			price:"$9.95",
+			ingredients:["eggs","sausage","toast","hashbrowns","pancakes"]
+		};
+
+
+
+
+		var savingsAccoount = { 
+			balance:1000,
+			interesratePercent:1,
+			deposit: function addMoney(amount){
+				if(amount > 0){
+					savingsAccoount.balance += amount;
+
+				}
+			},
+			withdraw: function removeMoney(amount){
+				var verifybalance=savingsAccount.balance-amount;
+				if (amount > 0 && verifybalance >= 0) {
+					savingsAccount.balance -=amount;
+				}
+			},
+			printAccountsummary: function(){
+				return"welcome!\nyour balance is currently $1000 and yourv interestRate is 1%";
+
+			}
+		};
+
+
+		var facebookProfile={
+			name:"pardhu",
+			friends:1000,
+			messages:["hiii","hello","hey","hmm"],
+   			postmessage:function(message){
+                 console.log(facebookProfile.push(message));
+ 			},
+ 			deletemessage:function(index){
+                 console.log(facebookProfile.splice(index,1));
+ 			},
+ 			addFriend:function(){
+ 				console.log(facebookProfile.friends+1);
+ 			},
+ 			removeFriend:function(){
+ 				console.log(facebookProfile.friends-1);
+ 			},
+
+
+
+		};
+
+		var donuts =[
+		{type : "jelly",cost : 1.22},
+		{type : "chcolate",cost : 2.45},
+		{type : "cider",cost : 1.59},
+		{type : "boston cream",cost : 5.99},
+
+		];
+		donuts.forEach(function(donut){
+			console.log(donut.type+"donuts cost $"+donut.cost+"each");
+		});
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

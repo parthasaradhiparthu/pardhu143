@@ -1,0 +1,20 @@
+.h1 {
+		color:green;
+		font-family: :comic sans ms;
+	}
+	.p
+	 {
+		color:green;
+		font-family:agency FB;
+	}
+	.img
+	{
+		width:136px;
+		height:136px;
+		box-shadow:0px 0px 15px #00aaff;
+		
+	}
+	.bg
+	{
+		background-color: red;
+	}

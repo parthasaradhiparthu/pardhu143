@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array</title>
+	<script >
+
+	var myarray1=["car","bike",20,["pardhu","vinnu","sanju"]]
+	myarray1[3] 
+	var myarray=["car","bike",20]
+	var a=[
+	[1,2,3,4],
+	[5,6,7,8,9,10],
+	["car","bike",1000]
+	];
+
+	var donuts=["glazed","chocolate frosted","cinnamon","sprinkled","powdered","cinnamon sugar","glazed cruller","chocolate cruller","cookies","boston cream","powdered jelly filled","cream de leche","glazed donut holes","blueberry donut holes","cake donut holes","chocolate donut holes"]
+	console.log(donuts[12])
+
+	var a=["hi","heloo","mrng","ngt"]
+undefined
+a[2]
+"mrng"
+a[1]="pardhu";
+"pardhu"
+a
+["hi", "pardhu", "mrng", "ngt"]
+
+var udacity=["julia","james","pardhu"]
+
+var captin="mal";
+var second="zoe";
+var pilot="wash";
+var companion="inara";
+var nmercenary="jayne";
+var mechnic="kaylee";
+var a=[captin,second,pilot,companion,nmercenary,mechnic]
+
+var price=[1.23,48.11,90.11,8.50,1.00,1.10,67.00]
+price[0]=100;
+price[2]=1000;
+price[6]=10000;
+
+var myarray=[2,false,"bye",true,"hello",6]
+console.log(myarray.length);
+
+var myarray=[2,false,"bye",true,"hello",6]
+myarray.push("pardhu");
+
+var myarray=[2,false,"bye",true,"hello",6]
+myarray.pop("");
+
+var myarray=[2,false,"bye",true,"hello",6]
+myarray.splice(2,3"ppp");
+
+var team= ["csk","hyd","xip","rcb","kkr","rr",];
+function a(){
+
+if(team.length=7)
+{
+	return true;
+}else if(team.length<7){
+	return false;
+}
+}
+   var a=[1,2,3,4,];
+   a.join("");   
+
+
+var team= ["csk","hyd","xip","rcb","kkr","rr",];
+for( var i=0;i=team.length;i++){
+	team[i] += "hile";
+	console.log(team[i]);
+	}
+
+var team= ["csk","hyd","xip","rcb","kkr","rr",];
+team.forEach(function(team){
+	team +="hole";
+	team = team.toUpperCase();
+	console.log(team);
+});
+
+var test = [12,929,11,3,199,1000,7,1,24,37,4,19,300,3775,299,36,209,148,169,299,6,109,20,58,139,59,3,1,139];
+
+	test.forEach(function(element,index,array){
+		if(element%3===0){
+			element=element+100;
+			console.log(element);
+		}		
+});
+	
+var myarray=[1,2,3,4,5,]
+var newarray=myarray.map(function(elem){
+	elem=elem+100;
+	return elem;
+});
+
+var bill=[50.23,19.12,34.01,100.11,12.15,9.90,29.11,12.99,10.00,99.22,102.20,100.10,6.77,2.22]
+var total=bill.map(function(elem){
+	elem=elem+0.15;
+	return elem.toFixed(2);
+});
+
+var a=[
+[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20]
+];
+for(var i=0;i<a.length;i++){
+console.log(a[i])
+}
+
+var a=[
+[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20]
+];
+for(var r=0;r<a.length;r++){
+for(var c=0;c<a[r].length;c++){
+	console.log(a[r][c]);
+}
+}
+ 
+ var number[
+[243,12,23,12,45,45,78,66,223,3,],
+[34,2,1,553,23,4,66,23,4,55],
+[67,56,45,533,44,55,5,428,452,3,],
+[12,31,55,445,79,44,674,224,4,21,],
+[4,2,3,52,13,51,44,1,67,5],
+[74,532,6,7,35,17,89,43,43,66],
+[53,6,89,10,23,52,111,44,109,80,],
+[67,6,53,537,2,168,16,2,1,8],
+[76,7,9,6,3,73,77,100,56,100]
+ ];
+ for (var i=0;i<number.length;i++){
+ 	for (var j=0;j<number[i].length;i++){
+ 		value=number[i][j];
+ 		if(value%2===0){
+ 			number[i][j]="even";
+ 			console.log(number[i][j]);
+ 		}
+ 		else{
+ 			number[i][j]="odd";
+ 			console.log(number[i][j]);
+ 			
+ 		}
+ 	}
+ }
+
+	</script>
+	
+	
+</head>
+<body>
+
+</body>
+</html>
